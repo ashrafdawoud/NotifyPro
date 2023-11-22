@@ -4,7 +4,7 @@ plugins {
     kotlin("multiplatform").version("1.8.21").apply(false)
     id("maven-publish")
 }
-group = "com.example"
+group = "com.example.notifypro"
 version = "1.0"
 
 
