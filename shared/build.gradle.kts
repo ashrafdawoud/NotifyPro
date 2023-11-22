@@ -11,7 +11,10 @@ publishing {
         maven {
             name = "NotifyProPackages"
             url = uri("https://maven.pkg.github.com/ashrafdawoud/NotifyPro")
-
+            credentials {
+                username = "ashraf"
+                password = "123456789"
+            }
         }
     }
 //    publications {
