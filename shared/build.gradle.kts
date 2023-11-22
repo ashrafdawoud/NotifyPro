@@ -2,6 +2,23 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("maven-publish")
+}
+group = "com.example.notifypro"
+version = "1.0"
+publishing {
+    repositories {
+        maven {
+            name = "NotifyProPackages"
+            url = uri("https://maven.pkg.github.com/ashrafdawoud/NotifyPro")
+
+        }
+    }
+//    publications {
+//        gpr(MavenPublication) {
+//            from(components.java)
+//        }
+//    }
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
